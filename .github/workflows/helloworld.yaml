@@ -7,13 +7,12 @@ on:
   pull_request:
     branches:
       -master
-  workflow_dispatvh:
+  workflow_dispatch:
 
 jobs:
   hello:
-    runs_on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
-
       - uses: actions/checkout@v2
       - name: hello world
         run : echo " hello world"
@@ -21,8 +20,8 @@ jobs:
   goodby:
     runs-on: ubuntu-latest
     steps:
-      -name: good by world
-       run: echo "Goodbye world"
-       shell: bash
+      - name: good by world
+        run : echo "Goodbye world"
+        shell: bash
 
        
